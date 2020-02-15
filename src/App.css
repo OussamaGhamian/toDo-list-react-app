@@ -1,43 +1,64 @@
-body{
-  background: linear-gradient(to right, #00b7ea 0%,#009ec3 100%);
+body {
+  background: linear-gradient(to right, #00b7ea 0%, #009ec3 100%);
 }
+
 .App {
   text-align: center;
-  margin : 50px;
+  margin: 50px;
 }
-.App h1{
+
+.App h1 {
   color: white;
   font-weight: 900;
   font-size: xx-large;
 }
-.App input[type = "button"]{
+
+.App input[type="button"] {
   border-radius: 5px;
-  margin : 5px;
-  padding : 5px;
-  border : none;
+  margin: 5px;
+  padding: 5px;
+  border: none;
   color: darkslateblue;
   font-weight: 900;
 }
-.App input[type = "text"]{
+
+.App input[type="text"], .App .item button {
   border-radius: 5px;
-  margin : 5px;
-  padding : 5px;
+  margin: 5px;
+  padding: 5px;
   border: none;
 }
-.App ul{
+
+.App .item button {
+  min-width: 30%;
+}
+
+.App .item .btnGrp {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App ul {
   color: white;
   list-style: none;
   text-align: left;
   text-decoration: none;
   font-size: x-large;
 }
-.App li {
-  margin : 20px;
+
+.App .item li {
+  margin: 20px;
   margin-left: 0px;
   border-bottom: 1px solid darkblue;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  min-width: 99%;
+  max-width: 100%;
 }
 
-
-
+.App .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
